@@ -254,6 +254,8 @@ a:hover {
   background: var(--Color-Secundario, #55A4D7);
   border-radius: 0.9375rem;
   margin-bottom: 1.75rem;
+
+  overflow: hidden;
 }
 
 /* IZQUIERDA */
