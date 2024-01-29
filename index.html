@@ -1,1 +1,47 @@
-<h1>TAC</h1>
+<!DOCTYPE html>
+<head>
+  <!-----------META DATOS------------>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Página web del grupo TAC">
+  <meta name="theme-color" content="#3151AB">
+  <!------------OPEN GRAPH------------>
+  <meta property="og:title" content="Página web del grupo TAC">
+
+  <!------------vinculos------------>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <script src="script.js"></script>
+
+  <title>Enrique Rodríguez</title>
+</head>
+
+<body>
+      <nav id="desktop-nav">
+        <img class="logo" src="sfx/LogoTAC.png" alt="logo" id="logo">
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">Sobre Nosotros</a></li>
+            <li><a href="#projects">Nuestros Proyectos</a></li>
+            <li><a href="#programa"></a>Programa de Mano</li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <img class="logo" src="sfx/LogoTAC.png" alt="logo" id="logo">
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">Sobre Nosotros</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Nuestros Proyectos</a></li>
+            <li><a href="#programa" onclick="toggleMenu()">Programa de Mano</a></li>
+          </div>
+        </div>
+      </nav>
+
+</body>
