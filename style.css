@@ -118,7 +118,13 @@ a {
   }
 }
 
+div{
+  display: inline;
+}
 
+.seccion{
+  padding-top: 17vh;
+}
 
 /* CSS NORMAL */
 
@@ -126,6 +132,7 @@ a {
 body {
   font-family: "Poppins", sans-serif;
   background-color: #FBFBFE;
+  width: auto;
 }
 
 html {
@@ -151,13 +158,10 @@ nav,
 }
 
 nav {
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 17vh;
-  width:75vw;
-  padding-left: 10%;
-  padding-right: 15%;
-
+  width:100vw;
   backdrop-filter: blur(7px);
 
   position: fixed;
@@ -242,19 +246,32 @@ a:hover {
 
 .divSection{
   padding-top: 17vh;
+  align-self: center;
+  justify-content: center;
+  width: 90vw;
+}
+
+.divItems{
+  max-width: 80%;
+  padding-left: 10%;
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .item{
   display: flex;
 
-  width: 90vw;
+  width: 21.9375em;
   height: 11.4375rem;
   flex-shrink: 0;
   box-shadow: 2px 6px 4px 0px rgba(0, 0, 0, 0.25);
   background: var(--Color-Secundario, #55A4D7);
   border-radius: 0.9375rem;
   margin-bottom: 1.75rem;
-
   overflow: hidden;
 }
 
@@ -306,7 +323,7 @@ a:hover {
 /* DERECHA */
 
 .imagenVD{
-  width: 36vw;
+  width: 8.8em;
   height: 11.4375rem;
   flex-shrink: 0;
 
@@ -321,7 +338,7 @@ a:hover {
 }
 
 .PersonajeVD{
-  width: 51vw;
+  width: 3.69em;
   height: 3.625rem;
   flex-shrink: 0;
 
