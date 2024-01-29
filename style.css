@@ -85,6 +85,7 @@ a {
 .overlay a {
   padding: 8px;
   text-decoration: none;
+  font-family: Archivo-regular;
   font-size: 36px;
   color: #818181;
   display: block; /* Display block instead of inline */
