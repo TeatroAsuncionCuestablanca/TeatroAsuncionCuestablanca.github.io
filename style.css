@@ -256,10 +256,11 @@ a:hover {
   padding-left: 10%;
   align-self: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: row;
   align-content: flex-start;
   flex-wrap: wrap;
+  column-gap: 1.75rem;
 }
 
 .item{
