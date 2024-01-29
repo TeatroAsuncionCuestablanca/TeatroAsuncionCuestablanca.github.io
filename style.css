@@ -12,11 +12,11 @@
 }
 
 @font-face { font-family: Archivo-regular; 
-  src: url('/sfx/fonts/Archivo-Regular.ttf'); 
+  src: url('sfx/fonts/Archivo-Regular.ttf'); 
 }
 
 @font-face { font-family: Onyx-regular; 
-  src: url('/sfx/fonts/Onyx-Regular.ttf'); 
+  src: url('sfx/fonts/Onyx-Regular.ttf'); 
 }
 
 
