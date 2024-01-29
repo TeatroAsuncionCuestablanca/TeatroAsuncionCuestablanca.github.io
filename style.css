@@ -7,6 +7,15 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+@font-face { font-family: Rojal-regular; 
+  src: url('/sfx/fonts/Rojal.ttf'); 
+}
+
+@font-face { font-family: Archivo-regular; 
+  src: url('/sfx/fonts/Archivo-Regular.ttf'); 
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -67,8 +76,12 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 17vh;
+  width:70vw;
   padding-left: 10%;
   padding-right: 15%;
+  background-color: #FBFBFE;
+
+  position: fixed;
 }
 
 .nav-links {
@@ -154,6 +167,7 @@ a:hover {
   max-height: 300px;
   /* border: 1px solid; */
   border-radius: 5px;
+  background-color: rgba(251, 251, 254, 0.8);
 }
 
 .hamburger-icon.open span:first-child {
@@ -178,4 +192,109 @@ a:hover {
 
 .hamburger-icon span:first-child {
   transform: none;
+}
+
+/* FIGMA STUFF */
+
+.divSection{
+  padding-top: 17vh;
+}
+
+.item{
+  display: flex;
+  
+  width: 90vw;
+  height: 11.4375rem;
+  flex-shrink: 0;
+  box-shadow: 2px 6px 4px 0px rgba(0, 0, 0, 0.25);
+  background: var(--Color-Secundario, #55A4D7);
+  border-radius: 0.9375rem;
+  margin-bottom: 1.75rem;
+}
+
+/* IZQUIERDA */
+
+.imagenVI{
+  width: 8.6875rem;
+  height: 11.4375rem;
+  flex-shrink: 0;
+  border-radius: 0.9375rem 0rem 0rem 0.9375rem;
+  background: #E0E0E0;
+}
+
+.divTextoVI{
+  align-self: center;
+  padding-left: 1rem;
+
+}
+
+.PersonajeVI{
+  width: 14.375rem;
+  height: 3.625rem;
+  flex-shrink: 0;
+
+  color: var(--BG-LightMode, #FBFBFE);
+  font-family: Rojal-regular;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.NombreVI{
+  width: 14.375rem;
+  height: 2.75rem;
+  flex-shrink: 0;
+
+  color: var(--Sub-Light, #DBDBDB);
+  font-family: Archivo-Regular;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* DERECHA */
+
+.imagenVD{
+  width: 35vw;
+  height: 11.4375rem;
+  flex-shrink: 0;
+
+  border-radius: 0rem 0.9375rem 0.9375rem 0rem;
+  background: #E0E0E0;
+}
+
+.divTextoVD{
+  align-self: center;
+  padding-right: 1rem;
+
+}
+
+.PersonajeVD{
+  width: 51vw;
+  height: 3.625rem;
+  flex-shrink: 0;
+
+  color: var(--BG-LightMode, #FBFBFE);
+  text-align: right;
+  font-family: Rojal-regular;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.NombreVD{
+  /* width: 50vw; */
+  height: 2.75rem;
+  flex-shrink: 0;
+
+  color: var(--Sub-Light, #DBDBDB);
+  text-align: right;
+  font-family: Archivo-Regular;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
