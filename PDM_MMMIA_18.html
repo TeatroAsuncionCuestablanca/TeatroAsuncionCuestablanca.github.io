@@ -54,7 +54,10 @@
       </div>
 
       <!-- POP UP Images -->
-      <div class="popUpImage"></div>
+      <div class="popUpImage">
+        <span>&times;</span>
+        <img src="sfx/cast/img-00.png"/>
+      </div>
 
       <!-- Seccion -->
 
@@ -65,7 +68,7 @@
 
           <div class="divItems">
             <div class="item">
-              <div class="imageHover"><img class="imagenVI" src="sfx/cast/img-0.png"/></div>
+              <div class="imageHover"><img class="imagenVI" src="sfx/cast/img-00.png" alt="imagen del actor/actriz"/ id="clickeableImage"></div>
               <div class="divTextoVI">
                 <h3 class="PersonajeVI">Escenografía</h3>
                 <p class="NombreVI">Nacho Berrio Jimenez</p>
@@ -77,11 +80,11 @@
                 <h3 class="PersonajeVD">Atrezzo</h3>
                 <p class="NombreVD">Mónica Pico Linares</p>
               </div>
-              <div class="imageHover"><img class="imagenVD" src="sfx/cast/img-0.png"/></div>
+              <div class="imageHover"><img class="imagenVD" src="sfx/cast/img-01.png" alt="imagen del actor/actriz"/></div>
             </div>
 
             <div class="item">
-              <div class="imageHover"><img class="imagenVI" src="sfx/cast/img-0.png"/></div>
+              <div class="imageHover"><img class="imagenVI" src="sfx/cast/img-02.png" alt="imagen del actor/actriz"/></div>
               <div class="divTextoVI">
                 <h3 class="PersonajeVI">Musical</h3>
                 <p class="NombreVI">Bego Zumárraga</p>
@@ -93,7 +96,7 @@
                 <h3 class="PersonajeVD">Musical</h3>
                 <p class="NombreVD">Joserra Garcia Soto</p>
               </div>
-              <div class="imageHover"><img class="imagenVD" src="sfx/cast/img-0.png"/></div>
+              <div class="imageHover"><img class="imagenVD" src="sfx/cast/img-00.png" alt="imagen del actor/actriz"/></div>  
             </div>
           </div>
 
@@ -212,5 +215,19 @@
 
         </div>
       </section>
+
+      <script>
+        document.querySelectorAll('.item img').forEach(image=>{
+          image.onclick = () =>{
+            console.log(image.getAttribute('src'));
+            document.querySelector('.popUpImage').style.display = 'block';
+            document.querySelector('.popUpImage img').src = image.getAttribute('src');
+          }
+        })
+
+        document.querySelector('.popUpImage').onclick = () =>{
+          document.querySelector('.popUpImage').style.display = 'none';
+        }
+      </script>
 
 </body>

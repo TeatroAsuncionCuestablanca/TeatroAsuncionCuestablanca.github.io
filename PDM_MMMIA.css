@@ -276,6 +276,38 @@ a:hover {
   column-gap: 1.75rem;
 }
 
+.popUpImage{
+  position: fixed;
+  top: 0; left: 0;
+  background-color: rgba(0,0,0, 0.8); /* Black w/opacity */
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: none;
+  z-index: 100;
+}
+
+.popUpImage span{
+  position: absolute;
+  top: 40px; right: 60px;
+  font-size: 40px;
+  font-weight: bolder;
+  color:whitesmoke;
+  cursor: pointer;
+}
+
+.popUpImage img{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  max-height: 80%;
+  max-width: 80%;
+  object-fit: cover;
+}
+
+
+
 .item{
   display: flex;
 
@@ -296,6 +328,7 @@ a:hover {
 .item img:hover {
   transform: scale(1.2);
   object-fit:initial;
+  z-index: 0;
   transition: .2s linear;
 }
 
