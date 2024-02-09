@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-----------META DATOS------------>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Página web del grupo TAC">
+  <meta name="theme-color" content="#3151AB">
+  <!------------OPEN GRAPH------------>
+  <meta property="og:title" content="Página web del grupo TAC">
+  <link rel="icon" type="image/x-icon" href="/sfx/LogoTAC.ico">
+
+  <!------------vinculos------------>
+  <link rel="stylesheet" href="css/main.css" />
+
+  <link rel="stylesheet" href="css/vScroll.css" />
+  <link rel="stylesheet" href="css/mediaqueries.css" />
+  <link rel="stylesheet" href="css/hamburgers.css">
+  <script src="js/NAV-hamburguers.js"></script>
+
+  <title>TAC</title>
+</head>
+
+<body>
+      <nav id="desktop-nav">
+        <img class="logo" src="sfx/LogoTAC.webp" alt="logo" id="logo">
+        <div>
+          <ul class="nav-links">
+            <li><a href="#1">Sobre Nosotros</a></li>
+            <li><a href="/index-PDM.html">Programa de Mano</a><li>
+            <li><a href="#4">Informacion de Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <img class="logo" src="sfx/LogoTAC.webp" alt="logo" id="logo">
+        <div class="hamburger-menu">
+          <button class="hamburger hamburger--stand" type="button" id="boton_hamburguer" onclick="toggleMenu()">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- The overlay -->
+      <div id="myNav" class="overlay" onclick="closeNav();toggleMenu()">
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="#1">Sobre Nosotros</a>
+          <li><a href="/index-PDM.html">Programa de Mano</a><li>
+          <a href="#4">Informacion de Contacto</a>
+        </div>
+      </div>
+      <div class="content">
+        <main class="sections">
+
+
+
+
+
+
+
+          <!-- ----- Mamma Mia 2 ------
+          <section class="section section--mammaMia">
+            <div class="section__body">
+              <h3>Mamma Mia 2</h3>
+              <div class="divFechas">
+                <a href="/PDM_MMMIA_18.html">18 de Mayo</a>
+                <a>19 de Mayo</a>
+                <a>24 de Mayo</a>
+                <a>25 de Mayo</a>
+              </div>
+            </div>
+          </section> -->
+
+          <!-- ----- Mamma Mia ------ -->
+          <section class="section section--mammaMia">
+            <div class="section__body">
+              <h3>Mamma Mia</h3>
+              <div class="divFechas">
+                <a href="/PDM_MMMIA_18.html">18 de Mayo</a>
+                <a>19 de Mayo</a>
+                <a>24 de Mayo</a>
+                <a>25 de Mayo</a>
+              </div>
+            </div>
+          </section>
+            
+      </div>
+      </main>
+</body>
