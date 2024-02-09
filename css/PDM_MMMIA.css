@@ -1,0 +1,425 @@
+.logo{
+    aspect-ratio: 1;
+    width: 100px;
+}
+
+/* GENERAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+@font-face { font-family: Rojal-regular; 
+  src: url('../sfx/fonts/Rojal.ttf'); 
+}
+
+@font-face { font-family: Archivo-regular; 
+  src: url('../sfx/fonts/Archivo-Regular.ttf'); 
+}
+
+@font-face { font-family: Onyx-regular; 
+  src: url('../sfx/fonts/Onyx-Regular.ttf'); 
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img.profile-pic {
+    border-radius: 50%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* The Overlay (background) */
+.overlay {
+  display: flex;
+
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 0%;
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 0; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.8); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+
+  align-items: center;
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  /* position: relative; */
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  height: fit-content;
+  /* margin-top: 30px; 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-family: Archivo-regular;
+  font-size: 36px;
+  color: #fdfdfdc2;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 60px;
+  right: 80px;
+  width: 50px;
+  aspect-ratio: 1;
+  /* background-color: #E0E0E0; */
+  
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+div{
+  display: inline;
+}
+
+.seccion{
+  padding-top: 17vh;
+}
+
+/* CSS NORMAL */
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #FBFBFE;
+  width: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* TRANSITION */
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+  width:100vw;
+
+  background-color: rgb(255 255 255 / 30%);
+  backdrop-filter: blur(10px);
+
+  
+  body {
+    background-image: url("anemones.jpg");
+  }
+  
+
+  position: fixed;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-links{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-height: 0;
+  overflow: hidden;
+
+  background-color: rgba(255, 255, 255, 50%);
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: right;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  /* border-bottom: 2px solid lightgray; */
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+#boton_hamburguer{
+  z-index: 1;
+}
+
+/* FIGMA STUFF */
+
+.tituloSeccion{
+  font-family: Onyx-regular;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.divSection{
+  padding-top: 17vh;
+  align-self: center;
+  justify-content: center;
+  width: 90vw;
+}
+
+.divItems{
+  max-width: 80%;
+  padding-left: 10%;
+  align-self: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  column-gap: 1.75rem;
+}
+
+.popUpImage{
+  position: fixed;
+  top: 0; left: 0;
+  background-color: rgba(0,0,0, 0.8); /* Black w/opacity */
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: none;
+  z-index: 100;
+}
+
+.popUpImage span{
+  position: absolute;
+  top: 40px; right: 60px;
+  font-size: 40px;
+  font-weight: bolder;
+  color:whitesmoke;
+  cursor: pointer;
+}
+
+.popUpImage img{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  max-height: 80%;
+  max-width: 80%;
+  object-fit: cover;
+}
+
+
+
+.item{
+  display: flex;
+
+  width: 21.9375em;
+  height: 11.4375rem;
+  flex-shrink: 0;
+  box-shadow: 2px 6px 4px 0px rgba(0, 0, 0, 0.25);
+  background: var(--Color-Secundario, #55A4D7);
+  border-radius: 0.9375rem;
+  margin-bottom: 1.75rem;
+  overflow: hidden;
+}
+
+.imageHover{
+  overflow: hidden;
+}
+
+.item img:hover {
+  transform: scale(1.2);
+  object-fit:initial;
+  z-index: 0;
+  transition: .2s linear;
+}
+
+/* IZQUIERDA */
+
+.imagenVI{
+  width: 8.6875rem;
+  height: 11.4375rem;
+  flex-shrink: 0;
+  border-radius: 0.9375rem 0rem 0rem 0.9375rem;
+  background: #E0E0E0;
+}
+
+.divTextoVI{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-self: center;
+  padding-left: 1rem;
+}
+
+.PersonajeVI{
+  width: max-content;
+  height: 3.625rem;
+  flex-shrink: 0;
+
+  color: var(--BG-LightMode, #FBFBFE);
+  font-family: Onyx-regular;
+  font-size: 3.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 0.4em;
+}
+
+.NombreVI{
+  width: max-content;
+  height: 2.75rem;
+  flex-shrink: 0;
+
+  color: var(--Sub-Light, #DBDBDB);
+  font-family: Archivo-Regular;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60%;
+}
+
+/* DERECHA */
+
+.imagenVD{
+  width: 8.8em;
+  height: 11.4375rem;
+  flex-shrink: 0;
+
+  border-radius: 0rem 0.9375rem 0.9375rem 0rem;
+  background: #E0E0E0;
+}
+
+.divTextoVD{
+  align-self: center;
+  padding-right: 1rem;
+
+}
+
+.PersonajeVD{
+  width: 3.69em;
+  height: 3.625rem;
+  flex-shrink: 0;
+
+  color: var(--BG-LightMode, #FBFBFE);
+  text-align: right;
+  font-family: Onyx-regular;
+  font-size: 3.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  padding-top: 0.4em;
+}
+
+.NombreVD{
+  /* width: 50vw; */
+  height: 2.75rem;
+  flex-shrink: 0;
+
+  color: var(--Sub-Light, #DBDBDB);
+  text-align: right;
+  font-family: Archivo-Regular;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60%;
+}
