@@ -1,5 +1,9 @@
 /* FIGMA STUFF */
 
+body{
+  background-color: #aacedc;
+}
+
 .tituloSeccion{
     font-family: Onyx-regular;
     font-size: 4rem;

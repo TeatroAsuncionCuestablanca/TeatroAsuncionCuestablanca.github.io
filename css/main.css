@@ -3,7 +3,7 @@
     width: 100px;
 }
 
-/* GENERAL */
+/*   GENERAL   */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
@@ -168,7 +168,7 @@ nav {
   height: 17vh;
   width:100vw;
 
-  background-color: rgb(255 255 255 / 30%);
+
   backdrop-filter: blur(10px);
 
   

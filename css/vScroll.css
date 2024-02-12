@@ -37,12 +37,34 @@ align-items: center;
 /*          Section         */
 /* ------------------------ */
 
-@media(max-width: 979px){
-.section {
+@media(max-width: 750px){
+  .section {
     &.section--mammaMia {
-        background-size: contain;
+      background-position-y: 230px;
+      background-size: contain;
+      h3{
+        color:white;
+        font-size: 6rem;
+      }
     }
+    .divFechas{
+      margin-bottom: 220px;
+    }
+  }
 }
+
+@media(min-width: 750px){
+  .section {
+    &.section--mammaMia {
+      h3{
+        color:white;
+        font-size: 12rem;
+      }
+    }
+    .divFechas{
+      margin-bottom: 100px;
+    }
+  }
 }
 
 
@@ -62,8 +84,6 @@ align-items: center;
   &.section--mammaMia {
 
     h3{
-      color: white;
-      font-size: 8rem;
       font-weight: lighter;
       line-height: normal;
 
@@ -74,10 +94,11 @@ align-items: center;
 
     .divFechas{
       max-height: 94px;
+      max-width: 500px;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      flex-wrap: wrap;
+
       a{
         padding-left: 20px;
         padding-right: 20px;
